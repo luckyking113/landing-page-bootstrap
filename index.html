@@ -29,12 +29,15 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul id="mynavbar" class="nav navbar-nav navbar-right">
-                    <li id="1" class="active"><a href="#home">HOME</a></li>
-                    <li id="2"><a href="#aboutus">ABOUT US</a></li>
-                    <li id="3"><a href="#practice">PRACTICE AREAS</a></li>
-                    <li id="4"><a href="#attorneys">OUR ATTORNEYS</a></li>
-                    <li id="5"><a href="#news">NEWS</a></li>
-                    <li id="6"><a href="#contact">CONTACT US</a></li>
+                    <li id="1" class="active home-window"><a href="#home">HOME</a></li>
+                    <li id="2" class="home-mobile active"><a href="#home-mobile">HOME</a></li>
+                    <li id="3"><a href="#aboutus">ABOUT US</a></li>
+                    <li id="4"><a href="#practice">PRACTICE AREAS</a></li>
+                    <li id="5" class="attorneys-window"><a href="#attorneys">OUR ATTORNEYS</a></li>
+                    <li id="6" class="attorneys-mobile"><a href="#attorneys-mobile">OUR ATTORNEYS</a></li>
+                    <li id="7" class="news-window"><a href="#news">NEWS</a></li>
+                    <li id="8" class="news-mobile"><a href="#news">NEWS</a></li>
+                    <li id="9"><a href="#contact">CONTACT US</a></li>
                 </ul>
             </div>
         </div>
@@ -58,7 +61,7 @@
             <div class="logo-mark"><img src="./images/Mlogo.png" alt=""></div>
         </div>
     </div>
-    <div id="home" class="for-mobile">
+    <div id="home-mobile" class="for-mobile">
         <div class="container-fluid">
             <div class="row">
                 <img src="./images/Mobile-header.png" alt="">
@@ -326,7 +329,7 @@
         </div>
     </div>
     <!-- for mobile -->
-    <div id="attorneys" class="ourteam-mobile">
+    <div id="attorneys-mobile" class="ourteam-mobile">
         <div class="container-fluid">
             <div class="wow fadeInUp" data-wow-delay="0.5s">
                 <h1>Our team</h1>
@@ -393,10 +396,13 @@
     <div id="news" class="mobile-quote">
         <div class="container wow fadeInUp">
             <h1>WHAT OUR CLIENT SAYS</h1>
-            <hr />                                        
-            <P><i class="fa fa-quote-left newsiconleft" ></i>"I retained Dave Mejias in my divorce proceedings back in 2010. He was great to deal with. He was very prompt to respond to my questions. In the end, I was extremely satisfied with my entire settlement and I found his pricing to be reasonable for his time and expertise."
-                <i class="fa fa-quote-right newsiconright"></i></P>
-            </p>
+            <hr />      
+            <div class="quote-content">
+                <i class="fa fa-quote-left newsiconleft" ></i>                                  
+                <P>"I retained Dave Mejias in my divorce proceedings back in 2010. He was great to deal with. He was very prompt to respond to my questions. In the end, I was extremely satisfied with my entire settlement and I found his pricing to be reasonable for his time and expertise."
+                </P>
+                <i class="fa fa-quote-right newsiconright"></i>
+            </div>                        
             <br /><h3>Sasha.</h3>
         </div>
     </div>
@@ -571,12 +577,12 @@
         $("#mynavbar li").click(function() {            
             var myid = this.id;
             $("li").removeClass("active");
-            $("#" + myid).addClass('active');
+            $("#" + myid).addClass('active');              
         });
 
         $("#mynavbar li a").click(function(){            
             var pageId = $(this).attr('href');                                  
-            $("html, body").animate({ scrollTop: $(pageId).offset().top }, 1000);
+            $("html, body").animate({ scrollTop: $(pageId).offset().top-100 }, 1000);
         });
 
     </script>
