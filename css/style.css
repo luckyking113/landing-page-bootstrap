@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'OpenSans-light';
+    src: url('../fonts/OpenSans/OpenSans-Light.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans-itac';
+    src: url('../fonts/OpenSans/OpenSans-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-Italic';
+    src: url('../fonts/Raleway/Raleway-Italic.ttf');
+}
+
 .btn {
     transition: all 300ms ease-in-out;
     font-weight: 500 !important;
@@ -44,8 +64,9 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .navbar a {
-    color: black !important;
-    opacity: 0.7;
+    color: #cacaca !important;    
+    font-size: 11.65pt !important;
+    font-weight: bold !important;
 }
 
 .navbar a:hover {
@@ -64,13 +85,50 @@ h1,h2,h3,h4,h5,p, span{
 .active {
     border-bottom: 2px solid rgb(0, 82, 155) !important;
 }
+
+.active a{
+    color: #292929 !important;
+}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     background-color: white !important;
+}
+
+.navbar-us-flag {
+    float: left;
+    border-right: 1px solid black;
+    /* padding-right: 10px; */
+}
+.navbar-spain-flag {
+    float: left;
+    margin-left: 10px;
+}
+
+.navbar-flag {
+    margin-top: 13px;
+}
+
+.navbar-flag img {
+    width: 70%;
+}
+
+@media only screen and (max-width:1320px){ 
+    .navbar {
+        padding-left: 56px;
+    }
 }
 
 @media only screen and (max-width:1270px){
     .foot-input input {
         width: 140px !important;
+    }
+    .navbar {
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width:1214px){ 
+    .navbar-default .navbar-nav>li>a {
+        font-size: 10.65pt !important;
     }
 }
 
@@ -83,14 +141,10 @@ h1,h2,h3,h4,h5,p, span{
     }
 }
 
-@media only screen and (max-width:1125px){
+@media only screen and (max-width:1167px){
     .navbar-default .navbar-nav>li>a {        
         padding-left: 10px;
         padding-right: 10px;
-    }
-
-    .header-left {
-        padding-top: 15% !important;
     }
     .foot-input .btn-send {
         width: 60px !important;
@@ -98,7 +152,7 @@ h1,h2,h3,h4,h5,p, span{
     
 }
 
-@media only screen and (max-width:1065px){
+@media only screen and (max-width:1106px){
     .navbar-default .navbar-nav>li>a {        
         padding-left: 6px;
         padding-right: 6px;
@@ -107,6 +161,17 @@ h1,h2,h3,h4,h5,p, span{
     .foot-input input {
         width: 110px !important;
     }
+}
+
+@media only screen and (max-width:1061px){ 
+    .navbar-header{
+        width: 30% !important;
+    }
+    .navbar-brand img {
+        width: 96% !important;
+        margin-top: 13px !important;
+    }
+
 }
 
 @media only screen and (max-width:1020px){
@@ -126,6 +191,17 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 @media (max-width: 992px){
+    .navbar-brand img {
+        width: 290px !important;
+    }
+
+    .response {
+        margin-top: 15px !important;
+    }
+
+    .foot-tab {
+        display: none;
+    }
 
     .navbar-toggle {
         display: inherit !important;
@@ -180,34 +256,6 @@ h1,h2,h3,h4,h5,p, span{
     .navbar-nav {
         margin-bottom: 25px;
     }
-
-    /* .navbar-nav > li{
-        display:block;
-        width:100%;
-        text-align:left;
-    }
-     
-    .navbar-collapse {
-        position:relative;
-        top:40px;
-        margin-bottom:40px !important;
-    } 
-      
-    .navbar-collapse.collapse {
-        display:none !important;
-    } 
-      
-    .navbar-collapse.in{
-        display:block !important ;
-        width: 100%;
-        padding: 0px;
-        background: white;
-        margin-top: 68px;
-    }
-    .navbar-right {
-        float: left;
-        width: 100%;
-    } */
 }
 
 @media only screen and (max-width:769px){
@@ -216,13 +264,14 @@ h1,h2,h3,h4,h5,p, span{
     }
     .navbar-toggle {
         margin-top: 37px;
-        margin-right: 29px;
+        margin-right: 5px;
+        z-index: 1000;
     }
     .navbar-collapse {
         background: white !important;
         z-index: 10000;
         padding: 0 40px 0 60px;
-        height: 280px !important;        
+        height: 300px !important;        
         margin: 0px;        
         width: 105% !important;        
     }
@@ -236,21 +285,33 @@ h1,h2,h3,h4,h5,p, span{
     .news-window {
         display: none !important;
     }
+    .navbar-brand img {
+        width: 72%;
+        margin-top: 12px;
+    }
 }
+
+@media only screen and (max-width:450px){ 
+    .navbar-header .navbar-brand {
+        width: 78%;
+    }
+    .navbar-header .navbar-brand img {
+        width: 90%;
+    }
+    .navbar-brand img {
+        width: 230px !important;
+    }
+}
+
 
 /* header section */
 .header {
-    background-image: url("../images/headerbackground.png");
+    background-image: url("../images/HOME.png");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;    
     height: 766px;
     padding-top: 106px;
-}
-
-.header h1 {
-    color: white;
-    font-size: 43.96pt;
 }
 
 .header p {
@@ -259,11 +320,44 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .header-left{
-    background-color: rgba(00, 82, 155, 0.8);
+    /* background-color: rgba(00, 82, 155, 0.8); */
+    background-color: rgba(00, 00, 00, 0.7);
     height: 660px;
-    padding-left: 100px;
+    /* padding-left: 100px;
     padding-right: 150px;      
-    padding-top: 10%;
+    padding-top: 10%; */
+    padding: 0px;
+}
+
+.header-detail {
+    height: 100%;
+    background-color: #0055a4;
+    margin-right: 100px;
+    padding: 0px 50px;
+}
+
+.header-detail-content {
+    position: absolute;
+    /* margin-left: -262px; */
+    margin-bottom: 20px;
+    left: 10%;
+    bottom: 53px;
+    width: 58%;
+    padding-right: 26px;
+}
+
+.header-detail-title {
+    position: absolute;
+    /* margin-left: -262px; */
+    margin-bottom: 20px;
+    left: 10%;
+    top: 120px;
+    width: 58%;
+}
+.header h3 {
+    color: white;
+    font-size: 25pt;
+    margin-top: 0px;
 }
 
 .for-mobile {
@@ -290,15 +384,15 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 @media only screen and (max-width:1250px){ 
-    .header-left {
+    /* .header-left {
         padding-top: 6% !important;
-    }
+    } */
 }
 
 @media only screen and (max-width:992px){    
-    .header-left {
+    /* .header-left {
         padding: 13% 4% 0% !important;    
-    } 
+    }  */
     .header h1 {        
         font-size: 38.96pt;
     }
@@ -365,13 +459,9 @@ h1,h2,h3,h4,h5,p, span{
     .mobile-header-btn:hover{
         background-color: transparent !important;
     }
-}
+    /* .navbar-header .navbar-toggle {
 
-@media only screen and (max-width:769px){ 
-    .navbar-brand img {
-        width: 72%;
-        margin-top: 12px;
-    }
+    } */
 }
 
 /* Practise area */
@@ -381,9 +471,13 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .practise hr {
-    border-bottom: 3px solid black;
+    border: 2px solid black;
     width: 292px;
     margin-top: 0px;
+}
+
+.desktop-practise hr {
+    border: 1px solid white;
 }
 
 .header-button {
@@ -409,18 +503,18 @@ h1,h2,h3,h4,h5,p, span{
 
 .header p {
     /* color: white; */
-    color: rgba(255, 255, 255, 0.8);
+    color: #fff;
     font-weight: 100;
 }
 
-.practice h1 {
+.practise h1 {
     font-size: 25pt;
     font-weight: bold;
 }
 
 .practise h3 {
     font-size: 19.35pt;    
-    margin: 3px;
+    margin-top: 30px;
     color: white;
     font-weight: bold;
 }
@@ -461,7 +555,7 @@ h1,h2,h3,h4,h5,p, span{
 .btn-practise {
     background-color: transparent;
     color: white;
-    border: 1px solid #fff !important;
+    border: 2px solid #fff !important;
     margin-top: 40px;
     width: 130px;
     /* width: 200px; */
@@ -471,7 +565,7 @@ h1,h2,h3,h4,h5,p, span{
     left: 50%;
     bottom: 40px;
     font-size: 11.23pt;
-    font-weight: bold;
+    font-weight: 700 !important;
 }
 
 .btn-practise:hover {
@@ -556,10 +650,11 @@ h1,h2,h3,h4,h5,p, span{
     background-color: transparent;
     color: black;
     border: 1px solid #000 !important;
-    margin-top: 16px;
+    margin-top: 56px;
     width: 130px;    
     font-size: 11.23pt;
-    font-weight: bold;
+    font-weight: bold !important;
+    float: right;
 }
 
 .btn-aboutus:hover {
@@ -588,13 +683,15 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .aboutus-mma hr {
-    border-bottom: 2px solid white;
-    width: 80px;
+    border: 1px solid white;
+    width: 61px;
+    margin-top: 0px;
 }
 
 .aboutus h3 {
     font-size: 19.84pt;
-    font-weight: bold;
+    font-weight: 700 !important;
+    margin-bottom: 0px;
 }
 
 .aboutus-line hr {
@@ -609,8 +706,17 @@ h1,h2,h3,h4,h5,p, span{
 
 .aboutus p {
     font-size: 13.99pt;
-    /* font-weight: 100; */
+    font-weight: 500;
 }
+
+.aboutus-mma-bgOpacity p{
+    font-size: 13.99pt;
+    font-weight: 300;
+}
+.aboutus-mma-bgOpacity h3 {
+    font-size: 14.99pt !important;
+    font-weight: 500;
+} 
 
 .desktop-aboutus {
     display: flex;
@@ -705,7 +811,7 @@ h1,h2,h3,h4,h5,p, span{
 }
 /* ourteam section */
 .ourteam {
-    background: #f5f5f5;
+    background: white;
     text-align: center;
     padding: 50px;
 }
@@ -717,6 +823,7 @@ h1,h2,h3,h4,h5,p, span{
 .ourteam h1 {
     font-size: 25pt;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .ourteam hr {
@@ -731,15 +838,24 @@ h1,h2,h3,h4,h5,p, span{
 
 .card {
     width: 100%;
+    background: #ebebeb;
+    padding: 20px;
+}
+
+.card-even {
+    background: #f5f5f5;
 }
 
 .card img {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
 
 }
-.card-body {
-    text-align: left;
+.card-body hr{
+    margin-top: 10px;
+    width: 32px;
+    border: 1px solid black;
 }
 
 .card-body h5 {
@@ -766,6 +882,7 @@ h1,h2,h3,h4,h5,p, span{
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+    padding: 0px;
 }
 
 .col-xs-5ths {
@@ -831,6 +948,7 @@ h1,h2,h3,h4,h5,p, span{
         width: 20%;
         float: left;
     }
+
 }
 
 @media (min-width: 1200px) {
@@ -863,12 +981,12 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .consult-buttom-line {
-    width: 343px;
+    width: 153px;
 }
 
 .consultation-form hr {
     border: 2px solid white;
-    width: 100%;
+    /* width: 45%; */
     /* float: left; */
     margin-top: 0px;
  }
@@ -876,6 +994,14 @@ h1,h2,h3,h4,h5,p, span{
  .consultation .form {
      /* float: left; */
      margin-top: 50px;
+ }
+
+ .consultation select {
+     width: 100%;
+     height: 43px;
+     padding: 10px;
+     color: rgba(00, 00, 00, 0.8);
+     font-family: 'OpenSans-Regular';
  }
 
  .consultation .form input{
@@ -895,9 +1021,11 @@ h1,h2,h3,h4,h5,p, span{
  .btn-consult{
     background-color: transparent;
     color: white;
-    border: 1px solid white !important;
+    border: 2px solid white !important;
     margin-top: 23px;
     width: 130px;
+    font-weight: 500;
+    float: right;
  }
 
  .btn-consult:hover {
@@ -945,11 +1073,14 @@ h1,h2,h3,h4,h5,p, span{
     color: white;
     font-size: 13.75pt;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 .foot-detail p {
     color: white;
     font-size: 11pt;
     font-weight: 300;
+    margin: 0px;
+    font-family: 'OpenSans-Light'
 }
 
 .foot-detail hr {
@@ -962,6 +1093,7 @@ h1,h2,h3,h4,h5,p, span{
     border: 1px solid white !important;
     margin-top: 15px;
     width: 130px;
+    margin-bottom: 15px;
 }
 
 .foot-detail .btn-contactus:hover {
@@ -978,11 +1110,15 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .useful-tweet {
-    color: #2ca1d4;
+    color: #ffffff;
     /* font-size: 15px; */
     margin-right: 10px;
     font-size: 21px !important;
     margin-left: -29px;
+}
+
+.foot-input {
+    margin-top: 20px;
 }
 
 .foot-input input {
@@ -994,6 +1130,7 @@ h1,h2,h3,h4,h5,p, span{
     width: 70%;
     float: left;
     height: 34px;    
+  
 }
 
 .foot-input .btn-send {
@@ -1008,13 +1145,14 @@ h1,h2,h3,h4,h5,p, span{
     margin-bottom: 20px;
 }
 
-.followus {
+/* .followus {
     margin-top: 40px;
-}
+} */
 
 .newsletter-icon {
-    color: #3f7cb2;
+    color: #fff;
     font-size: 21px !important;
+    margin-right: 6px;
 }
 
 .footer {
@@ -1071,7 +1209,7 @@ h1,h2,h3,h4,h5,p, span{
     .aboutus-content hr {
         border: 1px solid black;
         width: 75px;
-        margin-top: 0px;
+        margin-top: 10px;
         margin-bottom: 0px;    
     }
     .mobile-aboutus-detail {
@@ -1311,4 +1449,70 @@ h1,h2,h3,h4,h5,p, span{
         width: 154px;
         margin-top: -15px;
     }
+}
+
+.header-left {
+    width: 538px !important;
+}
+
+.logoimage{
+    opacity: 1 !important;
+}
+
+.foot-tab {
+    text-align: center;
+    margin-bottom: 29px;
+
+}
+
+.foot-tab span {
+    padding: 0px 24px;
+    border-right: 1px solid white;
+}
+
+
+.foot-tab p {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 13.75pt;
+}
+
+.title-font {
+    font-size: 25pt;
+    font-weight: 100;
+    font-family: 'OpenSans-light';
+}
+
+.phone-number {
+    font-family: 'OpenSans-Light';
+}
+
+.email {
+    font-weight: bold;
+}
+
+.location p {
+    font-family: 'OpenSans-Regular';
+}
+
+.mobile-practise hr {
+    border: 1px solid white;
+}
+
+.mobile-quote p{
+    font-family: 'OpenSans-itac' ;
+}
+
+.team-member-mobile h3 {
+    font-family: 'OpenSans-Light'; 
+}
+
+.foot-font-color {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-family: 'OpenSans-Regular' !important;
+    font-weight: 500 !important
+}
+
+.quote-detail-font {
+    font-family: 'Raleway-Italic' !important;
 }

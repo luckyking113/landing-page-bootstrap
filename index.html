@@ -25,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="#" class="navbar-brand"><img src="images/logo.png" /></a>
+                <a href="#" class="navbar-brand logoimage"><img src="images/logo.png" /></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul id="mynavbar" class="nav navbar-nav navbar-right">
@@ -38,6 +38,10 @@
                     <li id="7" class="news-window"><a href="#news">NEWS</a></li>
                     <li id="8" class="news-mobile"><a href="#news">NEWS</a></li>
                     <li id="9"><a href="#contact">CONTACT US</a></li>
+                    <li class="navbar-flag">
+                        <div class="navbar-us-flag"><img src="./images/usa-flag.png" alt=""></div>
+                        <div class="navbar-spain-flag"><img src="./images/spain-flag.png" alt=""></div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -47,18 +51,27 @@
     <div id="home" class="header for-window">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6 col-md-6 header-left">
-                    <div class="wow fadeInDown" data-wow-delay="0.3s">
-                        <h1>Attorneys Fighting<br />For Your Rights</h1>
-                        <p>We are committed to fighting for our client's rights and to giving our clients the Care Compassion and attention they deserve.</p>
-                        <button class="btn header-button">
-                            CONTACT OUR ATTORNEY
-                        </button>
+                <div class="col-sm-6 col-md-4 header-left wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="header-detail">
+                        <div class="header-detail-title">
+                            <h3 class="title-font">Attorneys Fighting</h3>
+                            <h3 style="font-weight: bold;margin-top: 10px;">For your rights.</h3>
+                        </div>
+                        
+                        <div class="header-detail-content">
+                            <div class="" style="width:78px">
+                                <hr style="border: 1px solid #eee;">
+                            </div>
+                            <p>Our Long Island offices are staffed by legal professionals dedicated to serving our client's needs.</p>
+                            <p style="font-weight: bold">We take pride in getting to know our clients personally.</p>
+                            <p>Since you're the most important person in our office. We listen carefully to what you have to say.</p>
+                        
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6"></div>
+                <div class="col-sm-6 col-md-8"></div>
             </div>
-            <div class="logo-mark"><img src="./images/Mlogo.png" alt=""></div>
+            <!-- <div class="logo-mark"><img src="./images/Mlogo.png" alt=""></div> -->
         </div>
     </div>
     <div id="home-mobile" class="for-mobile">
@@ -173,8 +186,7 @@
                         <hr />
                     </div>   
                     <p>We've been fighting for the rights of our clients for many years. All of our family attorneys and divorce lawyers are trial lawyers. You need to know that you have an experienced trial lawyer on your side.</p>
-                    <p><b>Experience definitely counts.</b></p>
-                    <br />
+                    <p><b>Experience definitely counts.</b></p>                    
                     <p>Our Long Island offices are staffed by legal professionals dedicated to serving our client's needs. We take pride in getting to know our clients personally. Since you're the most important person in our office, we listen carefully to what you have to say.</p>
                     <br/>
                     <button class="btn btn-aboutus">Learn more</button>
@@ -252,13 +264,12 @@
             <div class="wow fadeInUp">
                 <i class="fa fa-quote-left" data-wow-delay="0.5s"></i>
                 <!-- <img src="" alt=""> -->
-                <h1>WHAT OUR CLIENT SAYS</h1>
-                <hr />
+                <h1>WHAT OUR CLIENT SAYS</h1>                
             </div>
             <img class="wow fadeInUp" data-wow-delay="1s" src="./images/quote-sasha.png" alt="">
             <p class="wow fadeInUp" data-wow-delay="1.5s"><b>Sasha</b>
-                <br /><span>S.H</span></p>
-            <P class="wow fadeInUp" data-wow-delay="2s">I retained Dave Mejias in my divorce proceedings back in 2010. He was great to deal with. He was very prompt to respond to my questions. In the end, I was extremely satisfied with my entire settlement and I found his pricing to be reasonable for his time and expertise.</P>
+                <br /><span style="font-weight: bold">S.H</span></p>
+            <P class="wow fadeInUp quote-detail-font" data-wow-delay="2s">"I retained Dave Mejias in my divorce proceedings back in 2010. He was great to deal with. He was very prompt to respond to my questions. In the end, I was extremely satisfied with my entire settlement and I found his pricing to be reasonable for his time and expertise."</P>
         </div>
     </div>
 
@@ -266,7 +277,7 @@
     <div id="attorneys" class="ourteam">
         <div class="container-fluid">
             <div class="wow fadeInUp" data-wow-delay="0.5s">
-                <h1>Our team</h1>
+                <h1>OUT TEAM</h1>
                 <hr />
             </div>
             <div class="row teamdetail-container">
@@ -274,21 +285,23 @@
                     <div class="card">
                         <img class="card-img-top" src="./images/davel.png" alt="Card image cap">
                         <div class="card-body">
+                                <hr />
                             <h5 style="margin-top: 10px;"><b>DAVEL MEJIAS</b></h5>
-                            <h5>Family Lawyer</h5>
-                            <p style="margin-top: 10px;"><i class="fa fa-phone"></i>516-333-777</p>
-                            <p><i class="fa fa-envelope-o"></i>Dave@meijaslaw.com</p>
+                            <p>Family Lawyer</p>
+                            <p style="margin-top: 10px;" class="phone-number">516-333-777</p>
+                            <p>Dave@meijaslaw.com</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-5ths col-xs-6 wow flipInY" data-wow-delay="1.2s">
-                    <div class="card">
+                    <div class="card card-even">
                         <img class="card-img-top" src="./images/Randi.png" alt="Card image cap">
                         <div class="card-body">
+                            <hr />
                             <h5 style="margin-top: 10px;"><b>RANDI M. MILGRIM</b></h5>
-                            <h5>Divorce Lawyer</h5>
-                            <p style="margin-top: 10px;"><i class="fa fa-phone"></i>516-333-7777</p>
-                            <p><i class="fa fa-envelope-o"></i>Randi@mejiaslaw.com</p>
+                            <p>Divorce Lawyer</p>
+                            <p style="margin-top: 10px;"class="phone-number" >516-333-7777</p>
+                            <p class="email">Randi@mejiaslaw.com</p>
                         </div>
                     </div>
                 </div>
@@ -296,21 +309,23 @@
                     <div class="card">
                         <img class="card-img-top" src="./images/Miguel.png" alt="Card image cap">
                         <div class="card-body">
+                                <hr />
                             <h5 style="margin-top: 10px;"><b>MIGUEL A. ALVARADO</b></h5>
-                            <h5>Personal injury Lawyer</h5>
-                            <p style="margin-top: 10px;"><i class="fa fa-phone"></i>516-333-777</p>
-                            <p><i class="fa fa-envelope-o"></i>Miguel@meijaslaw.com</p>
+                            <p>Personal injury Lawyer</p>
+                            <p style="margin-top: 10px;" class="phone-number">516-333-777</p>
+                            <p class="email">Miguel@meijaslaw.com</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-5ths col-xs-6 wow flipInY" data-wow-delay="2s">
-                    <div class="card">
+                    <div class="card card-even">
                         <img class="card-img-top" src="./images/Katherine.png" alt="Card image cap">
                         <div class="card-body">
+                                <hr />
                             <h5 style="margin-top: 10px;"><b>KATHERINE LINDO</b></h5>
-                            <h5>Personal Injury Lawyer</h5>
-                            <p style="margin-top: 10px;"><i class="fa fa-phone"></i>516-333-777</p>
-                            <p><i class="fa fa-envelope-o"></i>katherine@meijaslaw.com</p>
+                            <p>Personal Injury Lawyer</p>
+                            <p style="margin-top: 10px;" class="phone-number">516-333-777</p>
+                            <p class="email">katherine@meijaslaw.com</p>
                         </div>
                     </div>
                 </div>
@@ -318,10 +333,11 @@
                     <div class="card">
                         <img class="card-img-top" src="./images/Jamie.png" alt="Card image cap">
                         <div class="card-body">
+                                <hr />
                             <h5 style="margin-top: 10px;"><b>JAMIE STEIN</b></h5>
-                            <h5>Personal Injury Lawyer</h5>
-                            <p style="margin-top: 10px;"><i class="fa fa-phone"></i>516-333-777</p>
-                            <p><i class="fa fa-envelope-o"></i>jamie@meijaslaw.com</p>
+                            <p>Personal Injury Lawyer</p>
+                            <p style="margin-top: 10px;" class="phone-number">516-333-777</p>
+                            <p class="email">jamie@meijaslaw.com</p>
                         </div>
                     </div>
                 </div>
@@ -340,7 +356,7 @@
                     <h3><b>DAVEL.MEJIAS</b></h3>
                     <h3 style="opacity: 0.6;">Family Lawyer</h3>
                     <h3 style="margin-top: 25px;opacity: 0.6;">516-333-777</h3>
-                    <h3 style="font-style: italic">dave@meijaslaw.com</h3>
+                    <h3 style="font-style: italic"><b>dave@meijaslaw.com</b></h3>
                 </div>
                 <div class="member-photo">
                     <img src="./images/davel.png" alt="">
@@ -354,7 +370,7 @@
                     <h3><b>DAVEL.MEJIAS</b></h3>
                     <h3 style="opacity: 0.6;">Family Lawyer</h3>
                     <h3 style="margin-top: 25px;opacity: 0.6;">516-333-777</h3>
-                    <h3 style="font-style: italic">dave@meijaslaw.com</h3>
+                    <h3 style="font-style: italic"><b>dave@meijaslaw.com</b></h3>
                 </div>
             </div>
             <div class="row member-layour wow fadeInLeft" data-wow-delay="1.5s">
@@ -362,7 +378,7 @@
                     <h3><b>DAVEL.MEJIAS</b></h3>
                     <h3 style="opacity: 0.6;">Family Lawyer</h3>
                     <h3 style="margin-top: 25px;opacity: 0.6;">516-333-777</h3>
-                    <h3 style="font-style: italic">dave@meijaslaw.com</h3>
+                    <h3 style="font-style: italic"><b>dave@meijaslaw.com</b></h3>
                 </div>
                 <div class="member-photo">
                     <img src="./images/Jamie.png" alt="">
@@ -376,7 +392,7 @@
                     <h3><b>DAVEL.MEJIAS</b></h3>
                     <h3 style="opacity: 0.6;">Family Lawyer</h3>
                     <h3 style="margin-top: 25px;opacity: 0.6;">516-333-777</h3>
-                    <h3 style="font-style: italic">dave@meijaslaw.com</h3>
+                    <h3 style="font-style: italic"><b>dave@meijaslaw.com</b></h3>
                 </div>
             </div>
             <div class="row member-layour wow fadeInLeft" data-wow-delay="2.5s">
@@ -384,7 +400,7 @@
                     <h3><b>DAVEL.MEJIAS</b></h3>
                     <h3 style="opacity: 0.6;">Family Lawyer</h3>
                     <h3 style="margin-top: 25px;opacity: 0.6;">516-333-777</h3>
-                    <h3 style="font-style: italic">dave@meijaslaw.com</h3>
+                    <h3 style="font-style: italic"><b>dave@meijaslaw.com</b></h3>
                 </div>
                 <div class="member-photo">
                     <img src="./images/Miguel.png" alt="">
@@ -407,6 +423,36 @@
         </div>
     </div>
 
+    <!-- location section -->
+    <div class="location">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.4s">
+                        <img src="./images/map.png" alt="">
+                        <h3>VISIT OUR OFFICES</h3>
+                        <hr />
+                        <p>1 Dosoris Ln, Glen Cove, NY 11542.</p>
+                        <p>100 Main Street, Hernpstead, NY 11550.</p>
+                    </div>
+                    <div class="col-md-4 wow fadeInDown" data-wow-delay="0.8s">
+                        <img src="./images/map.png" alt="">
+                        <h3>GET TOUCH WITH US</h3>
+                        <hr />
+                        <p>Phone: 515.333.7777 - Fax:515.292.0101</p>
+                        <p>Phone: 515.292.010 - Fax:515.292.4694</p>
+                        <p>info@mejiaslaw.com</p>
+                    </div>
+                    <div class="col-md-4 wow fadeInRight" data-wow-delay="0.4s">
+                        <img src="./images/map.png" alt="">
+                        <h3>VISIT OUR OFFICES</h3>
+                        <hr />
+                        <p>Monday~Friday: 09.00am to 17.00pm</p>
+                        <p>Saturday and Sunday Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <!-- contact section -->
     <div id="contact" class="consultation">
         <div class="container-fluid">
@@ -428,10 +474,15 @@
                         </div>
                         <div class="row" style="margin-top: 30px;">
                             <div class="col-xs-6">
-                                <input type="input" placeholder="First Name">
+                                <input type="input" placeholder="Email">
                             </div>
                             <div class="col-xs-6">
-                                <input type="input" placeholder="Last Name">
+                                <select>
+                                    <option value="volvo" selected>Criminal Law</option>
+                                    <option value="saab">Family Law</option>
+                                    <option value="opel">Personal Injury</option>
+                                    <option value="audi">Traffic Tickets</option>
+                                </select>
                             </div>
                         </div>
                         <div class="row" style="margin-top: 30px;">
@@ -447,84 +498,110 @@
                 <div class="col-lg-7 col-md-5"></div>
             </div>
         </div>
-    </div>
-
-    <!-- location section -->
-    <div class="location">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 wow fadeInLeft" data-wow-delay="0.4s">
-                    <img src="./images/map.png" alt="">
-                    <h3>VISIT OUR OFFICES</h3>
-                    <hr />
-                    <p>1 Dosoris Ln, Glen Cove, NY 11542.</p>
-                    <p>100 Main Street, Hernpstead, NY 11542.</p>
-                </div>
-                <div class="col-md-4 wow fadeInDown" data-wow-delay="0.8s">
-                    <img src="./images/map.png" alt="">
-                    <h3>GET TOUCH WITH US</h3>
-                    <hr />
-                    <p>Phone: 515.333.7777 - Fax:515.292.0101</p>
-                    <p>Phone: 515.292.010 - Fax:515.292.4694</p>
-                    <p>info@mejiaslaw.com</p>
-                </div>
-                <div class="col-md-4 wow fadeInRight" data-wow-delay="0.4s">
-                    <img src="./images/map.png" alt="">
-                    <h3>VISIT OUR OFFICES</h3>
-                    <hr />
-                    <p>Monday~Friday: 09.00am to 17.00pm</p>
-                    <p>Saturday and Sunday Closed</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </div>    
 
     <div class="foot-detail">
         <div class="container-fluid">
+            <div class="row foot-tab">
+                <p>
+                    <span style="border-right: 0px;    
+                    border-right: 0px;
+                    border-bottom: 2px solid #4080b9;
+                    padding: 0px 10px;
+                    margin-right: 13px;
+                    padding-bottom: 10px;">HOME</span>
+                    <span style="border-left: 1px solid white;">ABOUT US</span>
+                    <span>PRACTICE AREAS</span>
+                    <span>OUR ATTORNEYS</span>
+                    <span>NEWS</span>
+                    <span>CONTACT US</span>
+                </p>    
+                            
+                <!-- <div class="foot-tab-detail">
+                    <p>HOME</p>
+                </div>
+                <div class="foot-tab-detail">
+                    <p>ABOUT US</p>
+                </div>
+                <div class="foot-tab-detail">
+                    <p>PRACTICE AREAS</p>
+                </div>
+                <div class="foot-tab-detail">
+                    <p>OUR ATTORNEYS</p>
+                </div>
+                <div class="foot-tab-detail">
+                    <p>NEWS</p>
+                </div>
+                <div class="foot-tab-detail">
+                    <p>CONTACT US</p>
+                </div> -->
+            </div>
             <div class="row">
                 <div class="col-md-3">
                     <h5>MEET OUR LAWYERS</h5>
                     <div class="foot-hr">
                         <hr />
                     </div>
-                    <p>The professional and experienced trial lawyers of Mejias Milgrim & Alvarado. PC. handles every aspect of family law and all personal injury related matters in Long Island. Glen Cove. Nassau and Suffolk Country.</p>
-                    <p>Our team is committed to sound legal advancacy with personatized approach.</p>
-                    <button class="btn btn-contactus">CONTACT US</button>
+                    <p class="foot-font-color">The professional and experienced trial lawyers of Mejias Milgrim & Alvarado. PC. handles every aspect of family law and all personal injury related matters in Long Island. Glen Cove. Nassau and Suffolk Country.</p>
+                    
                 </div>
                 <div class="col-md-3">
                     <h5>USEFULL LINKS</h5>
                     <div class="foot-hr">
                         <hr />
                     </div>
-                    <p>> Family Law & Divorce</p>
-                    <p>> Personal Injury</p>
+                    <p class="foot-font-color">> Family Law & Divorce</p>
+                    <p class="foot-font-color">> Personal Injury</p>
                 </div>
                 <div class="col-md-3">
                     <h5>USEFUL TWEETS</h5>
                     <div class="foot-hr">
                         <hr />
                     </div>
-                    <p><i class="fa fa-twitter useful-tweet"></i>MejiasLawFirm Anger, betrayal, frustration & even a desire for revenge can crop up when you're going through a divorce. But don't http://tco/oBg7rWhQgEDec 07</p>
-                    <p><i class="fa fa-twitter useful-tweet"></i>MejiasLawFirm Traffic is especially busy during the #holiday season. Take extra precautions on the roads this month. Unfortunatel. https://t.co/fnN38lg59a Dec 06</p>
+                    <p class="foot-font-color"><i class="fa fa-twitter useful-tweet"></i>MejiasLawFirm Anger, betrayal, frustration & even a desire for revenge can crop up when you're going through a divorce. But don't http://tco/oBg7rWhQgEDec 07</p>                    
                 </div>
                 <div class="col-md-3">
                     <h5>NEWSLETTER</h5>
                     <div class="foot-hr">
                         <hr />
                     </div>
-                    <p>Sign up for our mailing list to get lastest updates and offers.</p>
+                    <p class="foot-font-color">Sign up for our mailing list to get lastest updates and offers.</p>
                     <div class="foot-input">
                         <input type="email" placeholder="Your Email">
                         <button class="btn btn-send">SEND</button>
                     </div>
-                    <p><i>"Your email id is Confidential</i></p>
+                    <p class="foot-font-color">"Your email id is Confidential</p>                    
+
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-3">                    
+                    <p class="foot-font-color">Our team is committed to sound legal advancacy with personatized approach.</p>
+                    <button class="btn btn-contactus">CONTACT US</button>
+                </div>
+                <div class="col-md-3">
+                    <p><b>Hempstead, Long Island Office</b></p>
+                    <p class="foot-font-color">100 Main Street, Hempstead, New York 11550</p>
+                    <p class="foot-font-color">Phone: 516.292.0101 - Fax:516.292.4694</p><br/>
+                    <p><b>Glen Cove, Long Island Office</b></p>
+                    <p class="foot-font-color">1 Dosoris Lane, Glen Cove, New York 11542</p>
+                </div>
+                <div class="col-md-3">                    
+                    <p class="foot-font-color response"><i class="fa fa-twitter useful-tweet"></i>MejiasLawFirm Traffic is especially busy during the #holiday season. Take extra precautions on the roads this month. Unfortunatel. https://t.co/fnN38lg59a Dec 06</p>
+                </div>
+                <div class="col-md-3">
                     <h5 class="followus">FOLLOW US ON</h5>
                     <div class="foot-hr">
                         <hr />
                     </div>
                     <i class="fa fa-twitter newsletter-icon"></i>
                     <i class="fa fa-facebook newsletter-icon"></i>
-
+                    <i class="fa fa-instagram newsletter-icon"></i>
+                    <div style="width: 100%;margin-top: 20px">
+                        <img style="margin-right:5px;" src="./images/usa-flag.png" alt="">
+                        <img src="./images/spain-flag.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
