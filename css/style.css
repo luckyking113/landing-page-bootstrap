@@ -18,6 +18,11 @@
     src: url('../fonts/Raleway/Raleway-Italic.ttf');
 }
 
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+
 .btn {
     transition: all 300ms ease-in-out;
     font-weight: 500 !important;
@@ -35,7 +40,7 @@
 }
 
 h1,h2,h3,h4,h5,p, span{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 .row {
@@ -315,7 +320,7 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .header p {
-    font-size: 14.13pt;
+    font-size: 17px;
     font-weight: 100;
 }
 
@@ -397,7 +402,7 @@ h1,h2,h3,h4,h5,p, span{
         font-size: 38.96pt;
     }
     .header p {
-        font-size: 12.13pt;
+        font-size: 17px;
     }
 
     .header-button {
@@ -471,8 +476,8 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .practise hr {
-    border: 2px solid black;
-    width: 292px;
+    border: 2px solid #292929   ;
+    width: 211px;
     margin-top: 0px;
 }
 
@@ -564,8 +569,8 @@ h1,h2,h3,h4,h5,p, span{
     margin-bottom: 20px;
     left: 50%;
     bottom: 40px;
-    font-size: 11.23pt;
-    font-weight: 700 !important;
+    font-size: 14px;
+    font-weight: bold !important;
 }
 
 .btn-practise:hover {
@@ -652,9 +657,11 @@ h1,h2,h3,h4,h5,p, span{
     border: 1px solid #000 !important;
     margin-top: 56px;
     width: 130px;    
-    font-size: 11.23pt;
+    font-size: 11.52px;
     font-weight: bold !important;
     float: right;
+    font-family: 'Raleway';
+    margin-right: 15px;
 }
 
 .btn-aboutus:hover {
@@ -689,9 +696,11 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .aboutus h3 {
-    font-size: 19.84pt;
+    font-size: 19.85px;
     font-weight: 700 !important;
     margin-bottom: 0px;
+    font-family: "Raleway" !important;
+    color: #292929 !important;
 }
 
 .aboutus-line hr {
@@ -705,8 +714,9 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .aboutus p {
-    font-size: 13.99pt;
+    font-size: 15px;
     font-weight: 500;
+    font-family: "Raleway" !important;
 }
 
 .aboutus-mma-bgOpacity p{
@@ -716,6 +726,7 @@ h1,h2,h3,h4,h5,p, span{
 .aboutus-mma-bgOpacity h3 {
     font-size: 14.99pt !important;
     font-weight: 500;
+    color: white !important;
 } 
 
 .desktop-aboutus {
@@ -765,7 +776,7 @@ h1,h2,h3,h4,h5,p, span{
 
 .quote h1 {
     margin: 10px;
-    font-size: 25pt;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -859,19 +870,19 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .card-body h5 {
-    font-size: 12pt;
+    font-size: 18px !important;
     margin: 0px;    
-    font-weight: 500 !important;
+    font-weight: bold !important;
 }
 
 .card-body i {
-    color: #00529b;
+    /* color: #00529b; */
     margin-right: 10px;
 }
 
 .card-body p {
     font-weight: 500;
-    font-size: 12pt;    
+    font-size: 12px;    
     margin: 0px;
 }
 .col-xs-5ths,
@@ -892,13 +903,13 @@ h1,h2,h3,h4,h5,p, span{
 
 @media (max-width: 1510px) {
     .card-body p, .card-body h5{
-        font-size: 10pt !important;
+        font-size: 18px !important;
     }
 }
 
 @media (max-width: 1313px) {
     .card-body p, .card-body h5{
-        font-size: 8pt !important;
+        font-size: 18px !important;
     }
 }
 
@@ -912,7 +923,7 @@ h1,h2,h3,h4,h5,p, span{
 }
 @media (max-width: 998px) {
     .card-body p, .card-body h5{
-        font-size: 12pt !important;
+        font-size: 18px !important;
     }
     .ourteam{
         padding: 50px;
@@ -981,7 +992,7 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .consult-buttom-line {
-    width: 153px;
+    width: 110px;
 }
 
 .consultation-form hr {
@@ -1026,6 +1037,8 @@ h1,h2,h3,h4,h5,p, span{
     width: 130px;
     font-weight: 500;
     float: right;
+    font-size: 11.52px;
+    font-family: 'Raleway';
  }
 
  .btn-consult:hover {
@@ -1046,8 +1059,10 @@ h1,h2,h3,h4,h5,p, span{
  }
 
  .location h3 {
-     font-size: 19.85pt;
+     font-size: 19.85px;
      font-weight: bold;
+     color: #4A4A4A !important;
+     font-family: 'Raleway' !important;
  }
 
  .location hr {
@@ -1071,13 +1086,13 @@ h1,h2,h3,h4,h5,p, span{
 
 .foot-detail h5{
     color: white;
-    font-size: 13.75pt;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
 }
 .foot-detail p {
     color: white;
-    font-size: 11pt;
+    font-size: 12px;
     font-weight: 300;
     margin: 0px;
     font-family: 'OpenSans-Light'
@@ -1094,6 +1109,7 @@ h1,h2,h3,h4,h5,p, span{
     margin-top: 15px;
     width: 130px;
     margin-bottom: 15px;
+    font-size: 11.52px !important; 
 }
 
 .foot-detail .btn-contactus:hover {
@@ -1452,7 +1468,7 @@ h1,h2,h3,h4,h5,p, span{
 }
 
 .header-left {
-    width: 538px !important;
+    /* width: 538px !important; */
 }
 
 .logoimage{
@@ -1473,8 +1489,8 @@ h1,h2,h3,h4,h5,p, span{
 
 .foot-tab p {
     margin: 0px;
-    font-weight: 700;
-    font-size: 13.75pt;
+    font-weight: 600;
+    font-size: 12.88px;
 }
 
 .title-font {
@@ -1507,12 +1523,123 @@ h1,h2,h3,h4,h5,p, span{
     font-family: 'OpenSans-Light'; 
 }
 
-.foot-font-color {
-    color: rgba(255, 255, 255, 0.6) !important;
-    font-family: 'OpenSans-Regular' !important;
-    font-weight: 500 !important
-}
+
 
 .quote-detail-font {
     font-family: 'Raleway-Italic' !important;
+    font-size: 22 !important;
+}
+
+.title-font {
+    font-family: 'Raleway';
+}
+
+.navbar-nav>li>a {
+    font-family: 'Raleway';
+    /* color: #292929 !important; */
+    font-size: 14px !important;
+}
+
+.active a {
+        color: #292929 !important;
+}
+
+h1 {
+    font-family: 'Raleway' !important;
+    font-size: 25px !important;
+    color: #292929 !important;
+}
+
+.practise h3 {
+    font-size: 20px !important;
+    font-family: 'Raleway' !important;
+    font-weight: bold;
+}
+
+.practise-p-font {
+    font-size: 12px !important;
+    font-family: 'Raleway' !important;
+    font-weight: 500 !important;
+}
+
+.practise-detail-content {
+    font-size: 14px !important;
+    font-family: 'Raleway' !important;
+    font-weight: 500 !important;
+}
+
+.card-body p {
+    font-family: 'Open Sans' !important;
+    font-size: 12px !important;
+}
+
+.card-title {
+    font-family: 'Open Sans' !important;
+    font-size: 12px !important;
+}
+
+.email {
+    font-weight: 600px;
+    font-family: 'OpenSans-itac' !important;
+}
+
+.location p {
+    color: #4A4A4A !important;
+   font-family: 'Open Sans' !important;
+   font-size: 15px;
+   font-weight: 500;
+
+}
+
+.consultation h1 {
+    font-size: 20px !important; 
+    color: white !important;
+}
+
+.foot-font-color {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-family: 'Raleway-Regular' !important;
+    font-weight: 500 !important;
+    font-size: 12px !important; 
+}
+
+.foot-font-color1 {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-family: 'OpenSans' !important;
+    /* font-weight: 500 !important; */
+    font-size: 12px !important; 
+}
+
+/* #home-mobile h3 {
+    font-family: 'Raleway' !important;
+    font-size: 11px;
+    color: white;
+} */
+
+
+@media (max-width:1322px){
+    .header-detail-title {
+        top: 67px;
+    }
+    .header-detail-content {
+        bottom: 16px;
+    }
+}
+
+@media (max-width:992px){
+    .header-detail-title {
+        top: 120px;
+    }
+    .header-detail-content {
+        bottom: 53px;
+    }
+}
+
+@media (max-width:860px){
+    .header-detail-title {
+        top: 67px;
+    }
+    .header-detail-content {
+        bottom: 16px;
+    }
 }
